@@ -943,15 +943,18 @@ button,
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
+  padding-left: 30%;
 }
 
 .page-title__logo {
-  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .page-title__phone {
   display: block;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-bottom: 10px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
@@ -1731,8 +1734,8 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  max-width: 300px;
+  margin: 25px auto 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -1741,9 +1744,7 @@ button,
 }
 
 .trainers__img-wrapper:hover ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .trainers__overlay li {
@@ -2346,7 +2347,7 @@ button,
 .contacts {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  padding: 72px 0 20px;
+  padding: 72px 0 35px;
   background-color: #ffffff;
 }
 
@@ -2549,6 +2550,15 @@ button,
 
   .rates-list {
     gap: 0 calc((100vw - 1200px) / (1365 - 1200) * (39 - 14) + 14px);
+  }
+
+  .trainers__overlay {
+    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (30 - 10) + 10px);
+    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (30 - 10) + 10px);
+  }
+
+  .trainers__overlay ul {
+    margin-top: calc((100vw - 1200px) / (1365 - 1200) * (25 - 10) + 10px);
   }
 
   .free-workout h3 {
@@ -2842,6 +2852,14 @@ button,
     text-align: center;
   }
 
+  .trainers__overlay {
+    padding: 53px 30px 15px;
+  }
+
+  .trainers__overlay ul {
+    margin-top: 18px;
+  }
+
   .trainers__swiper-prev-btn,
   .trainers__swiper-next-btn {
     top: calc(50% - 19px);
@@ -3099,8 +3117,8 @@ button,
     padding-bottom: 30px;
   }
 
-  .page-title__logo {
-    margin-top: -2px;
+  .page-title__header {
+    padding-left: 20%;
   }
 
   .page-title__logo svg {
