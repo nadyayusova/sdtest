@@ -211,7 +211,15 @@
               </dl>
               <a class="btn btn--transparent-1" href="#" target="_blank">Заполнить заявку</a>
             </div>
-            <div class="promo__picture"></div>
+            <div class="promo__picture">
+              <picture>
+                <!-- 1х: 660px; 2x: 1320px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/competitions-mobile.webp 1x, img/competitions-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/competitions-tablet.webp 1x, img/competitions-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/competitions-desktop.webp 1x, img/competitions-desktop@2x.webp 2x">
+                <img src="img/competitions-desktop.jpg" srcset="img/competitions-desktop@2x.jpg 2x" width="660" height="500" alt="Модель соревнований" loading="lazy">
+              </picture>
+            </div>
           </div>
         </article>
         <section class="trainers" id="trainers">
